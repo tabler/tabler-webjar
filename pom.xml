@@ -11,7 +11,7 @@
     <groupId>org.webjars</groupId>
     <artifactId>tabler</artifactId>
     <name>tabler</name>
-    <version>0.0.32-SNAPSHOT</version>
+    <version>0.0.32</version>
     <packaging>jar</packaging>
     <description>WebJar for tabler. Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap 4 https://tabler.github.io/</description>
     <url>https://github.com/tabler/tabler</url>
@@ -27,7 +27,7 @@
         <url>https://github.com/webjars/tabler</url>
         <connection>scm:git:https://github.com/webjars/tabler.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tabler.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tabler-0.0.32</tag>
     </scm>
 
     <developers>
@@ -89,8 +89,8 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/tabler.zip" dest="${project.build.directory}"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/tabler.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/tabler-${version.unsnapshot}/dist">
