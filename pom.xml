@@ -11,7 +11,7 @@
     <groupId>org.webjars</groupId>
     <artifactId>tabler</artifactId>
     <name>tabler</name>
-    <version>1.0.0-beta3</version>
+    <version>1.0.0-beta9</version>
     <packaging>jar</packaging>
     <description>WebJar for tabler. Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap 4 https://tabler.github.io/</description>
     <url>https://github.com/tabler/tabler</url>
@@ -94,9 +94,10 @@
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
                                     <fileset dir="${project.build.directory}/tabler-${version.unsnapshot}/dist">
-                                        <include name="*.html" />
-                                        <include name="assets/**" />
-                                        <include name="docs/**" />
+                                        <include name="css/**" />
+                                        <include name="img/**" />
+                                        <include name="js/**" />
+                                        <include name="libs/**" />
                                     </fileset>
                                 </move>
                             </target>
