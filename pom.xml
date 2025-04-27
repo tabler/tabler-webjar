@@ -11,7 +11,7 @@
     <groupId>org.webjars</groupId>
     <artifactId>tabler</artifactId>
     <name>tabler</name>
-    <version>1.0.0-beta20</version>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
     <description>WebJar for tabler. Tabler is free and open-source HTML Dashboard UI Kit built on Bootstrap 4 https://tabler.github.io/</description>
     <url>https://github.com/tabler/tabler</url>
